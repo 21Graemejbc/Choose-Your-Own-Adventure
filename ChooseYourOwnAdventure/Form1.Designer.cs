@@ -47,6 +47,7 @@ namespace ChooseYourOwnAdventure
             // 
             // storyOutput
             // 
+            this.storyOutput.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.storyOutput.Location = new System.Drawing.Point(9, 10);
             this.storyOutput.Name = "storyOutput";
             this.storyOutput.Size = new System.Drawing.Size(782, 78);
@@ -56,6 +57,7 @@ namespace ChooseYourOwnAdventure
             // 
             // promptOutput
             // 
+            this.promptOutput.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.promptOutput.Location = new System.Drawing.Point(9, 412);
             this.promptOutput.Name = "promptOutput";
             this.promptOutput.Size = new System.Drawing.Size(775, 65);
@@ -103,6 +105,7 @@ namespace ChooseYourOwnAdventure
             // 
             // blueOutput
             // 
+            this.blueOutput.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueOutput.Location = new System.Drawing.Point(57, 480);
             this.blueOutput.Name = "blueOutput";
             this.blueOutput.Size = new System.Drawing.Size(735, 41);
@@ -111,6 +114,7 @@ namespace ChooseYourOwnAdventure
             // 
             // redOutput
             // 
+            this.redOutput.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redOutput.Location = new System.Drawing.Point(57, 527);
             this.redOutput.Name = "redOutput";
             this.redOutput.Size = new System.Drawing.Size(735, 41);
@@ -119,6 +123,7 @@ namespace ChooseYourOwnAdventure
             // 
             // greenOutput
             // 
+            this.greenOutput.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greenOutput.Location = new System.Drawing.Point(57, 574);
             this.greenOutput.Name = "greenOutput";
             this.greenOutput.Size = new System.Drawing.Size(735, 41);

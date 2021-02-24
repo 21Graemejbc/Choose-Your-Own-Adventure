@@ -52,14 +52,21 @@ namespace ChooseYourOwnAdventure
                 else if (scene == 11) { }
                 else if (scene == 12) { }
                 else if (scene == 13) { scene = 15; }
-                else if (scene == 14) { }
+                else if (scene == 14) 
+                {
+                    Random randGen = new Random();
+                    int chance = randGen.Next(1, 21);
+
+                    if (chance <= 5) { scene = 18; }
+                    else { scene = dead; }
+                }
                 else if (scene == 15) { scene = 23; }
                 else if (scene == 16) { }
                 else if (scene == 17) { }
-                else if (scene == 18) { }
-                else if (scene == 19) { }
+                else if (scene == 18) { scene = 23; }
+                else if (scene == 19) { scene = 21; }
                 else if (scene == 20) { }
-                else if (scene == 21) { }
+                else if (scene == 21) { scene = 29; }
                 else if (scene == 22) { }
                 else if (scene == 23) { }
                 else if (scene == 24) { }
@@ -87,14 +94,14 @@ namespace ChooseYourOwnAdventure
                 else if (scene == 11) { }
                 else if (scene == 12) { }
                 else if (scene == 13) { scene = 14; }
-                else if (scene == 14) { }
+                else if (scene == 14) { scene = 19; }
                 else if (scene == 15) { scene = 20; }
                 else if (scene == 16) { }
                 else if (scene == 17) { }
-                else if (scene == 18) { }
-                else if (scene == 19) { }
+                else if (scene == 18) { scene = 98; }
+                else if (scene == 19) { scene = 23; }
                 else if (scene == 20) { }
-                else if (scene == 21) { }
+                else if (scene == 21) { scene = 23; }
                 else if (scene == 22) { }
                 else if (scene == 23) { }
                 else if (scene == 24) { }
@@ -248,7 +255,7 @@ namespace ChooseYourOwnAdventure
                     promptOutput.Text = "Investigate the light or move on?";
 
                     redOutput.Text = "Investigate";
-                    blueOutput.Text = "Move on"; //You are here
+                    blueOutput.Text = "Move on"; 
                     greenOutput.Text = "";
                     break;
 
@@ -269,26 +276,43 @@ namespace ChooseYourOwnAdventure
                     //Output text
                     //Option texts
                     break;
+
                 case 18:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "As you close in, you're able to make out some text: 'MK III Proximity Detonated High Explosive'. A bomb!? This whole thing was a setup. Maybe the proximity sensor on this unit is broken?";
+                    promptOutput.Text = "Do you want to rig the bomb to destroy the ship and escape on the shuttle, or leave it and hunt for the saboteur?";
+
+                    redOutput.Text = "Hunt him down";
+                    blueOutput.Text = "Sabotage & leave";
+                    greenOutput.Text = "";
                     break;
+
                 case 19:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You make your way back to the reactor. After digging around the central computer, you realize that something is wrong with the interior of the reactor that'll need to be mended for long-term stability.";
+                    promptOutput.Text = "Do you head into the reactor? Or do you investigate the flight deck?";
+
+                    redOutput.Text = "Enter the reactor";
+                    blueOutput.Text = "Go to the flight deck";
+                    greenOutput.Text = "";
                     break;
+
                 case 20:
                     //Output text
                     //Option texts
                     break;
+
                 case 21:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You put on a radiation suit and enter the reactor, some of the power had been manually disconnected from the mass ejection mechanisms...";
+                    promptOutput.Text = "Do you want to reconnect the mechanisms?";
+
+                    redOutput.Text = "Yes";
+                    blueOutput.Text = "No";
+                    greenOutput.Text = "";
                     break;
+
                 case 22:
-                    //Output text
-                    //Option texts
+                    
                     break;
+
                 case 23:
                     //Output text
                     //Option texts
