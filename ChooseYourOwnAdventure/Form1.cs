@@ -2,7 +2,8 @@
  * February 24, 2021
  * A game about escaping/repairing a spaceship*/
 
-//Could do specific death messages, but unsure
+//Pathing should be done, unless mistakes were made.
+//To do: Media, GUI optimization, make green dissapear when its not an option
 
 
 using System;
@@ -37,43 +38,52 @@ namespace ChooseYourOwnAdventure
                     Random randGen = new Random();
                     int chance = randGen.Next (1, 11);
 
-                    if (chance <= 1) { scene = 96; }
+                    if (chance <= 1) { scene = 1; }
                     else { scene = dead; }
                 }
 
+                else if (scene == 1)  { scene = 97; }
                 else if (scene == 3)  { scene = 5; }
-                else if (scene == 4)  { }
+                else if (scene == 4)  { scene = dead; }
                 else if (scene == 5)  { scene = dead; }
-                else if (scene == 6)  { scene = dead; }
-                else if (scene == 7)  { }
-                else if (scene == 8)  { scene = dead; }
-                else if (scene == 9)  { }
-                else if (scene == 10) { }
+                else if (scene == 6)  { scene = 7; }
+                else if (scene == 7)  { scene = dead; }
+                else if (scene == 8)  { scene = 9; }
+                else if (scene == 9)  { scene = dead; }
+                else if (scene == 10) { scene = 12; }
                 else if (scene == 11) { }
-                else if (scene == 12) { }
+                else if (scene == 12) { scene = dead; }
                 else if (scene == 13) { scene = 15; }
                 else if (scene == 14) 
                 {
                     Random randGen = new Random();
                     int chance = randGen.Next(1, 21);
-
                     if (chance <= 5) { scene = 18; }
-                    else { scene = dead; }
+
+                    else { scene = 16; }
                 }
                 else if (scene == 15) { scene = 23; }
-                else if (scene == 16) { }
-                else if (scene == 17) { }
+                else if (scene == 16) { scene = dead; }
+                else if (scene == 17) { scene = 98; }
                 else if (scene == 18) { scene = 23; }
                 else if (scene == 19) { scene = 21; }
-                else if (scene == 20) { }
+                else if (scene == 20) { scene = 19; }
                 else if (scene == 21) { scene = 29; }
                 else if (scene == 22) { }
-                else if (scene == 23) { }
-                else if (scene == 24) { }
-                else if (scene == 25) { }
-                else if (scene == 26) { }
-                else if (scene == 27) { }
-                else if (scene == 28) { }
+                else if (scene == 23) { scene = 24; }
+                else if (scene == 24) { scene = dead; }
+                else if (scene == 25) 
+                {
+                    Random randGen = new Random();
+                    int chance = randGen.Next(1, 11);
+
+                    if (chance <= 2) { scene = 27; }
+                    else { scene = 28; }
+                }
+                else if (scene == 26) { scene = 99; }
+                else if (scene == 27) { scene = 99; }
+                else if (scene == 28) { scene = dead; }
+                else if (scene == 29) { scene = 23; }
                 else if (scene == 96) { scene = 0; }
                 else if (scene == 97) { scene = 0; }
                 else if (scene == 98) { scene = 0; }
@@ -83,7 +93,7 @@ namespace ChooseYourOwnAdventure
             else if (e.KeyCode == Keys.B) //Blue button
             {
                 if (scene == 0)       { scene = 3; }
-                else if (scene == 3)  { scene = dead; }
+                else if (scene == 3)  { scene = 4; }
                 else if (scene == 4)  { }
                 else if (scene == 5)  { scene = 6; }
                 else if (scene == 6)  { scene = 8; }
@@ -98,17 +108,18 @@ namespace ChooseYourOwnAdventure
                 else if (scene == 15) { scene = 20; }
                 else if (scene == 16) { }
                 else if (scene == 17) { }
-                else if (scene == 18) { scene = 98; }
+                else if (scene == 18) { scene = 17; }
                 else if (scene == 19) { scene = 23; }
-                else if (scene == 20) { }
+                else if (scene == 20) { scene = 14; }
                 else if (scene == 21) { scene = 23; }
                 else if (scene == 22) { }
-                else if (scene == 23) { }
+                else if (scene == 23) { scene = 25; }
                 else if (scene == 24) { }
-                else if (scene == 25) { }
+                else if (scene == 25) { scene = 26; }
                 else if (scene == 26) { }
                 else if (scene == 27) { }
                 else if (scene == 28) { }
+                else if (scene == 29) { scene = 96; }
                 else if (scene == 96) { Application.Exit(); }
                 else if (scene == 97) { Application.Exit(); }
                 else if (scene == 98) { Application.Exit(); }
@@ -131,7 +142,7 @@ namespace ChooseYourOwnAdventure
                     int chance = randGen.Next(1, 11);
 
                     if (chance <= 4) { scene = 96; }
-                    else { scene = dead; }
+                    else { scene = 12; }
                 }
 
                 else if (scene == 9)  { }
@@ -171,6 +182,15 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
                     break;
 
+                case 1:
+                    storyOutput.Text = "You leave the station only to realize the fuel tanks have been drained. The engine sputters out and you're left adrift.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
+                    break;
+
                 case 3:
                     storyOutput.Text = "You come to a crossroads in engineering; the PA blares about a reactor issue, but the air is staring to feel thin as well...";
                     promptOutput.Text = "Will you go to reactor control, life support, or the power relay station first?";
@@ -181,8 +201,12 @@ namespace ChooseYourOwnAdventure
                     break;
 
                 case 4:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "The ongoing reactor issues have caused arcing electricity across the ship, you die in the power relay";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
 
                 case 5:
@@ -204,8 +228,12 @@ namespace ChooseYourOwnAdventure
                     break;
 
                 case 7:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "Having left reactor control, you move on to life support. Before you can make it, the reactor goes critical and the ship is reduced to atoms: you are dead.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
 
                 case 8:
@@ -218,15 +246,19 @@ namespace ChooseYourOwnAdventure
                     break;
 
                 case 9:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "In power, you notice a faint blinking light in the corner. As you draw nearer, the air finally runs out. You suffocate.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
 
                 case 10:
                     storyOutput.Text = "On your way back to the shuttle, you pass the fuel depot and grab some fuel for the shuttle... that should help.";
-                    promptOutput.Text = "";
+                    promptOutput.Text = "Press red to continue"; 
 
-                    redOutput.Text = "";
+                    redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
 
@@ -237,8 +269,12 @@ namespace ChooseYourOwnAdventure
                     //Option texts
                     break;
                 case 12:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "All seems well, until the fuel you grabbed injects into the core... in your hypoxia you grabbed an empty fuel canister. You are left adrift.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
 
                 case 13:
@@ -269,12 +305,21 @@ namespace ChooseYourOwnAdventure
                     break;
 
                 case 16:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "Before you can close the distance to even read the text on the blinking box, you are enveloped in an explosion. You are dead.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
+
                 case 17:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You manage to rig the bomb on a timer. With life support back on, you fill some oxygen tanks, stop by the fuel depot, and take the shuttle. As you fly away, you see the explosion of the ship behind you.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
 
                 case 18:
@@ -296,8 +341,12 @@ namespace ChooseYourOwnAdventure
                     break;
 
                 case 20:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You wonder if you should head to the power relay, where you haven't gone yet, or back to the reactor.";
+                    promptOutput.Text = "Reactor or power relay?";
+
+                    redOutput.Text = "Go to the reactor";
+                    blueOutput.Text = "Go to the power relay";
+                    greenOutput.Text = "";
                     break;
 
                 case 21:
@@ -314,28 +363,66 @@ namespace ChooseYourOwnAdventure
                     break;
 
                 case 23:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "The door of the lift opens on the flight deck. A dead security officer lies on the ground... he's been shot.";
+                    promptOutput.Text = "Do you take the gun from the body?";
+
+                    redOutput.Text = "No";
+                    blueOutput.Text = "Yes";
+                    greenOutput.Text = "";
                     break;
+
                 case 24:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You grab the gun. You take a deep breathe and open the door to the Command Information Center. Standing at the main terminal is someone you don't recognize. Seeing you're unarmed, he shoots you. 'Guess I didn't get them all' is the last thing you hear.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
+
                 case 25:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You grab the gun. You take a deep breathe and open the door to the Command Information Center. Standing at the main terminal is someone you don't recognize.";
+                    promptOutput.Text = "Kill or confront him?";
+
+                    redOutput.Text = "Confront";
+                    blueOutput.Text = "Kill";
+                    greenOutput.Text = "";
                     break;
+
                 case 26:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "Before he can react, you fire twice at the saboteur, killing him, congratulations, you've saved the ship.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
+
                 case 27:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "You call out to the man to surrender. Seeing you: gun drawn, he puts down his weapon and raises his hands. Congratulations, you've saved the ship honourably.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
                     break;
+
                 case 28:
-                    //Output text
-                    //Option texts
+                    storyOutput.Text = "As you call out to the man, he draws his weapon. You manage to hit him once, but it's not enough, he fires back and kills you.";
+                    promptOutput.Text = "Press red to continue";
+
+                    redOutput.Text = "Next";
+                    blueOutput.Text = "";
+                    greenOutput.Text = "";
+                    break;
+
+                case 29:
+                    storyOutput.Text = "You reconnect the reactor mechanisms. As full power is restored to the ship the tertiary systems come online. If you remember correctly, power is now running to the shuttle, filling the backups.. you wonder what would have happened had you tried to take it earlier...";
+                    promptOutput.Text = "Take the shuttle or investigate the flight deck?";
+
+                    redOutput.Text = "Flight deck";
+                    blueOutput.Text = "Shuffle";
+                    greenOutput.Text = "";
                     break;
 
                 case 96:
