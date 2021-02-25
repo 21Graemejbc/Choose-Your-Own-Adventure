@@ -32,17 +32,17 @@ namespace ChooseYourOwnAdventure
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.storyOutput = new System.Windows.Forms.Label();
             this.promptOutput = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.mainImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.blueOutput = new System.Windows.Forms.Label();
             this.redOutput = new System.Windows.Forms.Label();
             this.greenOutput = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mainImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // storyOutput
@@ -64,45 +64,6 @@ namespace ChooseYourOwnAdventure
             this.promptOutput.TabIndex = 2;
             this.promptOutput.Text = "Do you want to attempt to leave the station in a shuttle or try to conduct repair" +
     "s?";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ChooseYourOwnAdventure.Properties.Resources.Blue_Button;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 480);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // mainImage
-            // 
-            this.mainImage.Image = global::ChooseYourOwnAdventure.Properties.Resources.S0;
-            this.mainImage.Location = new System.Drawing.Point(9, 91);
-            this.mainImage.Name = "mainImage";
-            this.mainImage.Size = new System.Drawing.Size(783, 314);
-            this.mainImage.TabIndex = 0;
-            this.mainImage.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ChooseYourOwnAdventure.Properties.Resources.Green_Button;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 574);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ChooseYourOwnAdventure.Properties.Resources.Red_Button;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 527);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
             // 
             // blueOutput
             // 
@@ -130,6 +91,46 @@ namespace ChooseYourOwnAdventure
             this.greenOutput.Size = new System.Drawing.Size(735, 41);
             this.greenOutput.TabIndex = 8;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ChooseYourOwnAdventure.Properties.Resources.Red_Button;
+            this.pictureBox3.Location = new System.Drawing.Point(9, 527);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ChooseYourOwnAdventure.Properties.Resources.Green_Button;
+            this.pictureBox2.Location = new System.Drawing.Point(9, 574);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ChooseYourOwnAdventure.Properties.Resources.Blue_Button;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 480);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // mainImage
+            // 
+            this.mainImage.Image = global::ChooseYourOwnAdventure.Properties.Resources.S0;
+            this.mainImage.Location = new System.Drawing.Point(126, 97);
+            this.mainImage.Name = "mainImage";
+            this.mainImage.Size = new System.Drawing.Size(549, 291);
+            this.mainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mainImage.TabIndex = 0;
+            this.mainImage.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,10 +149,10 @@ namespace ChooseYourOwnAdventure
             this.Name = "Form1";
             this.Text = "The Screaming Firehawk";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

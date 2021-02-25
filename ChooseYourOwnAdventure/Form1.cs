@@ -181,7 +181,7 @@ namespace ChooseYourOwnAdventure
                     blueOutput.Text = "Repair";
                     greenOutput.Text = "";
 
-                    
+                    mainImage.Image = Properties.Resources.S0;
                     break;
 
                 case 1:
@@ -191,6 +191,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S1_12;
                     break;
 
                 case 3:
@@ -200,6 +202,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Life Support";
                     blueOutput.Text = "Power";
                     greenOutput.Text = "Reactor Control";
+
+                    mainImage.Image = Properties.Resources.S3_15_19_20;
                     break;
 
                 case 4:
@@ -209,6 +213,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S4;
                     break;
 
                 case 5:
@@ -218,6 +224,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Power";
                     blueOutput.Text = "Reactor Control";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S5;
                     break;
 
                 case 6:
@@ -227,6 +235,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "No";
                     blueOutput.Text = "Yes";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S6;
                     break;
 
                 case 7:
@@ -236,6 +246,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S7;
                     break;
 
                 case 8:
@@ -245,6 +257,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Power";
                     blueOutput.Text = "Life Support";
                     greenOutput.Text = "Go back to the shuttle (risky)";
+
+                    mainImage.Image = Properties.Resources.S8;
                     break;
 
                 case 9:
@@ -254,6 +268,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S9;
                     break;
 
                 case 10:
@@ -264,6 +280,7 @@ namespace ChooseYourOwnAdventure
                     blueOutput.Text = "";
                     greenOutput.Text = "";
 
+                    mainImage.Image = Properties.Resources.S10;
                     break;
 
                 case 11:
@@ -277,6 +294,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S1_12;
                     break;
 
                 case 13:
@@ -286,6 +305,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Investigate";
                     blueOutput.Text = "Go to power";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S13;
                     break;
 
                 case 14:
@@ -295,6 +316,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Investigate (risky)";
                     blueOutput.Text = "Move on";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S14;
                     break;
 
                 case 15:
@@ -304,6 +327,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Go to the flight deck";
                     blueOutput.Text = "Back to engineering";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S3_15_19_20;
                     break;
 
                 case 16:
@@ -313,6 +338,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S16;
                     break;
 
                 case 17:
@@ -322,6 +349,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S17;
                     break;
 
                 case 18:
@@ -331,6 +360,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Hunt him down";
                     blueOutput.Text = "Sabotage and leave";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S18;
                     break;
 
                 case 19:
@@ -340,6 +371,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Enter the reactor";
                     blueOutput.Text = "Go to the flight deck";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S3_15_19_20;
                     break;
 
                 case 20:
@@ -349,6 +382,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Go to the reactor";
                     blueOutput.Text = "Go to the power relay";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S3_15_19_20;
                     break;
 
                 case 21:
@@ -358,6 +393,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Yes";
                     blueOutput.Text = "No";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S21_29;
                     break;
 
                 case 22:
@@ -366,11 +403,13 @@ namespace ChooseYourOwnAdventure
 
                 case 23: 
                     storyOutput.Text = "The door of the lift opens on the flight deck. A dead security officer lies on the ground... he's been shot.";
-                    promptOutput.Text = "Do you take the gun from the body?";
+                    promptOutput.Text = "Do you take their gun?";
 
-                    redOutput.Text = "No";
+                    redOutput.Text = "No, I don't want anyone to get hurt.";
                     blueOutput.Text = "Yes";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S23;
                     break;
 
                 case 24:
@@ -380,6 +419,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S24_28;
                     break;
 
                 case 25:
@@ -389,6 +430,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Confront (risky)";
                     blueOutput.Text = "Kill";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S24_28;
                     break;
 
                 case 26:
@@ -398,6 +441,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S24_28;
                     break;
 
                 case 27:
@@ -407,6 +452,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S24_28;
                     break;
 
                 case 28:
@@ -416,6 +463,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Next";
                     blueOutput.Text = "";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S24_28;
                     break;
 
                 case 29:
@@ -423,8 +472,10 @@ namespace ChooseYourOwnAdventure
                     promptOutput.Text = "Take the shuttle or investigate the flight deck?";
 
                     redOutput.Text = "Flight deck";
-                    blueOutput.Text = "Shuffle";
+                    blueOutput.Text = "Shuttle";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.S21_29;
                     break;
 
                 case 96:
@@ -434,6 +485,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Yes";
                     blueOutput.Text = "No";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.win;
                     break;
 
                 case 97:
@@ -443,6 +496,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Yes";
                     blueOutput.Text = "No";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.dead;
                     break;
 
                 case 98:
@@ -452,6 +507,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Yes";
                     blueOutput.Text = "No";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.win;
                     break;
 
                 case 99:
@@ -461,6 +518,8 @@ namespace ChooseYourOwnAdventure
                     redOutput.Text = "Yes";
                     blueOutput.Text = "No";
                     greenOutput.Text = "";
+
+                    mainImage.Image = Properties.Resources.win;
                     break;
             }
         }
