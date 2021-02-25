@@ -50,10 +50,10 @@ namespace ChooseYourOwnAdventure
             this.storyOutput.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.storyOutput.Location = new System.Drawing.Point(9, 10);
             this.storyOutput.Name = "storyOutput";
-            this.storyOutput.Size = new System.Drawing.Size(782, 78);
+            this.storyOutput.Size = new System.Drawing.Size(782, 98);
             this.storyOutput.TabIndex = 1;
             this.storyOutput.Text = "You wake up with a concussion, it seems you were knocked out during the evacuatio" +
-    "ns and are the last one remaining onboard the Screaming Firehawk";
+    "ns and are the last one remaining onboard the ship";
             // 
             // promptOutput
             // 
@@ -77,6 +77,7 @@ namespace ChooseYourOwnAdventure
             // 
             // mainImage
             // 
+            this.mainImage.Image = global::ChooseYourOwnAdventure.Properties.Resources.S0;
             this.mainImage.Location = new System.Drawing.Point(9, 91);
             this.mainImage.Name = "mainImage";
             this.mainImage.Size = new System.Drawing.Size(783, 314);
