@@ -182,6 +182,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S0;
+
+                    SoundPlayer player1 = new SoundPlayer(Properties.Resources.sound0);
+                    player1.Play();
+
                     break;
 
                 case 1:
@@ -193,6 +197,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S1_12;
+
+                    SoundPlayer player2 = new SoundPlayer(Properties.Resources.sound1_12);
+                    player2.Play();
+
                     break;
 
                 case 3:
@@ -204,6 +212,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "Reactor Control";
 
                     mainImage.Image = Properties.Resources.S3_15_19_20;
+
+                    SoundPlayer player3 = new SoundPlayer(Properties.Resources.sound3);
+                    player3.Play();
+
                     break;
 
                 case 4:
@@ -215,6 +227,11 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S4;
+
+                    SoundPlayer player4 = new SoundPlayer(Properties.Resources.sound4);
+                    player4.Play();
+
+
                     break;
 
                 case 5:
@@ -226,6 +243,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S5;
+
                     break;
 
                 case 6:
@@ -237,6 +255,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S6;
+
+                    SoundPlayer player5 = new SoundPlayer(Properties.Resources.sound6);
+                    player5.Play();
+
                     break;
 
                 case 7:
@@ -248,6 +270,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S7;
+
+                    SoundPlayer player6 = new SoundPlayer(Properties.Resources.sound7_16);
+                    player6.Play();
+
                     break;
 
                 case 8:
@@ -259,6 +285,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "Go back to the shuttle (risky)";
 
                     mainImage.Image = Properties.Resources.S8;
+
                     break;
 
                 case 9:
@@ -270,6 +297,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S9;
+
+                    SoundPlayer player7 = new SoundPlayer(Properties.Resources.sound9);
+                    player7.Play();
+
                     break;
 
                 case 10:
@@ -281,6 +312,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S10;
+
+                    SoundPlayer player8 = new SoundPlayer(Properties.Resources.sound10);
+                    player8.Play();
+
                     break;
 
                 case 11:
@@ -296,6 +331,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S1_12;
+
+                    SoundPlayer player9 = new SoundPlayer(Properties.Resources.sound1_12);
+                    player9.Play();
+
                     break;
 
                 case 13:
@@ -307,6 +346,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S13;
+
+                    SoundPlayer player10 = new SoundPlayer(Properties.Resources.sound13);
+                    player10.Play();
+
                     break;
 
                 case 14:
@@ -318,6 +361,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S14;
+
                     break;
 
                 case 15:
@@ -329,6 +373,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S3_15_19_20;
+
                     break;
 
                 case 16:
@@ -340,9 +385,13 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S16;
+
+                    SoundPlayer player11 = new SoundPlayer(Properties.Resources.sound7_16);
+                    player11.Play();
+
                     break;
 
-                case 17:
+                case 17: 
                     storyOutput.Text = "You manage to rig the bomb on a timer. With life support back on, you fill some oxygen tanks, stop by the fuel depot, and take the shuttle. As you fly away, you see the explosion of the ship behind you.";
                     promptOutput.Text = "Press red to continue";
 
@@ -351,6 +400,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S17;
+
+                    SoundPlayer player12 = new SoundPlayer(Properties.Resources.sound17);
+                    player12.Play();
+
                     break;
 
                 case 18:
@@ -362,6 +415,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S18;
+
+                    SoundPlayer player13 = new SoundPlayer(Properties.Resources.sound18);
+                    player13.Play();
+
                     break;
 
                 case 19:
@@ -373,6 +430,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S3_15_19_20;
+
+                    SoundPlayer player14 = new SoundPlayer(Properties.Resources.sound19);
+                    player14.Play();
+
                     break;
 
                 case 20:
@@ -384,6 +445,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S3_15_19_20;
+
                     break;
 
                 case 21:
@@ -395,6 +457,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S21_29;
+
+                    SoundPlayer player15 = new SoundPlayer(Properties.Resources.sound21);
+                    player15.Play();
+
                     break;
 
                 case 22:
@@ -410,6 +476,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S23;
+
+                    SoundPlayer player16 = new SoundPlayer(Properties.Resources.sound23);
+                    player16.Play();
+
                     break;
 
                 case 24:
@@ -421,6 +491,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S24_28;
+
+                    SoundPlayer player17 = new SoundPlayer(Properties.Resources.sound24_26_28);
+                    player17.Play();
+
                     break;
 
                 case 25:
@@ -432,6 +506,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S24_28;
+
                     break;
 
                 case 26:
@@ -443,6 +518,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S24_28;
+
+                    SoundPlayer player18 = new SoundPlayer(Properties.Resources.sound24_26_28);
+                    player18.Play();
+
                     break;
 
                 case 27:
@@ -454,6 +533,7 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S24_28;
+
                     break;
 
                 case 28:
@@ -465,6 +545,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S24_28;
+
+                    SoundPlayer player19 = new SoundPlayer(Properties.Resources.sound24_26_28);
+                    player19.Play();
+
                     break;
 
                 case 29:
@@ -476,6 +560,10 @@ namespace ChooseYourOwnAdventure
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.S21_29;
+
+                    SoundPlayer player20 = new SoundPlayer(Properties.Resources.sound29);
+                    player20.Play();
+
                     break;
 
                 case 96:
@@ -516,7 +604,7 @@ namespace ChooseYourOwnAdventure
                     promptOutput.Text = "Would you like to play again?";
 
                     redOutput.Text = "Yes";
-                    blueOutput.Text = "No";
+                    blueOutput.Text = "No"; 
                     greenOutput.Text = "";
 
                     mainImage.Image = Properties.Resources.win;

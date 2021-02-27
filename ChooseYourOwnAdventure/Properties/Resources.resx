@@ -184,6 +184,54 @@
   <data name="S9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\S9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sound0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound0.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound10.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound13.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound17.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound18.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound19.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound1_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound1,12.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound21.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound23.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound24_26_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound24,26,28.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound29.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound7_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound7,16.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="win" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\win.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

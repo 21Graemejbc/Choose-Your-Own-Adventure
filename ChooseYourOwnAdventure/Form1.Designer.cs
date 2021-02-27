@@ -53,7 +53,7 @@ namespace ChooseYourOwnAdventure
             this.storyOutput.Size = new System.Drawing.Size(782, 98);
             this.storyOutput.TabIndex = 1;
             this.storyOutput.Text = "You wake up with a concussion, it seems you were knocked out during the evacuatio" +
-    "ns and are the last one remaining onboard the ship";
+    "ns and are the last one remaining onboard the Screaming Firehawk";
             // 
             // promptOutput
             // 
@@ -62,8 +62,8 @@ namespace ChooseYourOwnAdventure
             this.promptOutput.Name = "promptOutput";
             this.promptOutput.Size = new System.Drawing.Size(775, 65);
             this.promptOutput.TabIndex = 2;
-            this.promptOutput.Text = "Do you want to attempt to leave the station in a shuttle or try to conduct repair" +
-    "s?";
+            this.promptOutput.Text = "Do you want to attempt to leave the ship in a shuttle? Or, try to conduct repairs" +
+    "?";
             // 
             // blueOutput
             // 
@@ -81,7 +81,7 @@ namespace ChooseYourOwnAdventure
             this.redOutput.Name = "redOutput";
             this.redOutput.Size = new System.Drawing.Size(735, 41);
             this.redOutput.TabIndex = 7;
-            this.redOutput.Text = "Escape";
+            this.redOutput.Text = "Escape (risky)";
             // 
             // greenOutput
             // 

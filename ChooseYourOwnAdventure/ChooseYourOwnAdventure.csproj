@@ -152,5 +152,53 @@
   <ItemGroup>
     <None Include="Resources\S23.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound0.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound1,12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound7,16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound24,26,28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
