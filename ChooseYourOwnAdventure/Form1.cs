@@ -1,10 +1,6 @@
 ﻿/* Graeme Cook
- * February 24, 2021
+ * February 28, 2021
  * A game about escaping/repairing a spaceship*/
-
-//Pathing should be done, unless mistakes were made.
-//To do: Media, GUI optimization, make green dissapear when its not an option
-
 
 using System;
 using System.Collections.Generic;
@@ -21,7 +17,10 @@ namespace ChooseYourOwnAdventure
 {
     public partial class Form1 : Form
     {
+        //Initializes the scene variable to 0, the starting screen
         int scene = 0;
+
+        //This variable doesn't, and shouldn't need to be changed, it is universally the death screen with regards to 'scene'
         int dead = 97;
 
         public Form1()
@@ -29,10 +28,13 @@ namespace ChooseYourOwnAdventure
             InitializeComponent();
         }
 
+        //Changes scene state variable on various key presses (M, B, & Space) allowing the user to move between scenes in the game.
+        //All (else) if statements have the same objective: move the player to the next stage, regardless of what choice the user has made.
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.M) //Red button
             {
+                //Gives a random chance between moving on between two scenes later in the story. Chances vary between scenes.
                 if (scene == 0)
                 {
                     Random randGen = new Random();
@@ -128,21 +130,26 @@ namespace ChooseYourOwnAdventure
                 }
             }
 
+            //Depending on what value is stored in the scene variable, sets up all of the text and elements of the UI.
+            //Every case has the same operation, only the values stored in the elements changes.
             switch (scene)
             {
                 case 0:
+                    //Sets the green & blue button visibility states to get rid of unnecessary screen pollution.
                     greenButton.Visible = false;
                     blueButton.Visible = true;
 
+                    //Sets the text boxes to display story and decision prompts
                     storyOutput.Text = "You wake up with a concussion, it seems you were knocked out during the evacuations and are the last one remaining onboard the Screaming Firehawk.";
                     promptOutput.Text = "Do you want to attempt to leave the ship in the shuttle or stay and try to conduct repairs?";
-
                     redOutput.Text = "Escape (risky)";
                     blueOutput.Text = "Repair";
                     greenOutput.Text = "";
 
+                    //Sets the contents of the image box
                     mainImage.Image = Properties.Resources.S0;
 
+                    //Creates a sound player and plays the assigned sound effect
                     SoundPlayer player1 = new SoundPlayer(Properties.Resources.sound0);
                     player1.Play();
 
